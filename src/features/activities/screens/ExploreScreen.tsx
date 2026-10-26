@@ -1,11 +1,9 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { useNavigation } from '@react-navigation/native';
 import { Pressable, ScrollView, Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-
 import { Chip } from '@/components/ui/Chip';
 import { colors } from '@/theme/tokens';
-
 import { ActivityCard } from '../components/ActivityCard';
 import { ACTIVITIES, CATEGORIES } from '../data';
 

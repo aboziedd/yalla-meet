@@ -1,6 +1,5 @@
-import { useNavigation } from '@react-navigation/native';
 import { ScrollView, Text, View } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native';
 import { AppButton } from '@/components/ui/AppButton';
 import { Avatar } from '@/components/ui/Avatar';
 import { Card } from '@/components/ui/Card';

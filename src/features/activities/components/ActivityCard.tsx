@@ -1,8 +1,6 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { Pressable, Text, View } from 'react-native';
-
+import { Ionicons } from '@expo/vector-icons';
 import { colors } from '@/theme/tokens';
-
 import type { Activity } from '../types';
 
 type Props = {

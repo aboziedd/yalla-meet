@@ -1,18 +1,13 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
+import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import type { ComponentProps } from 'react';
-
 import { ExploreScreen } from '@/features/activities/screens/ExploreScreen';
 import { MyActivitiesScreen } from '@/features/activities/screens/MyActivitiesScreen';
 import { ChatsScreen } from '@/features/chat/screens/ChatsScreen';
 import { ProfileScreen } from '@/features/profile/screens/ProfileScreen';
 import { colors } from '@/theme/tokens';
-
 import type { MainTabParamList } from './types';
 
-type IconName = ComponentProps<typeof Ionicons>['name'];
-
-const ICONS: Record<keyof MainTabParamList, IconName> = {
+const ICONS: Record<keyof MainTabParamList, keyof typeof Ionicons.glyphMap> = {
   Explore: 'compass-outline',
   MyActivities: 'calendar-outline',
   Chats: 'chatbubbles-outline',

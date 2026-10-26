@@ -1,5 +1,4 @@
 import { Text, TextInput, View, type TextInputProps } from 'react-native';
-
 import { colors } from '@/theme/tokens';
 
 export function Input({ label, ...inputProps }: TextInputProps & { label: string }) {

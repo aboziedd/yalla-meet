@@ -1,6 +1,5 @@
-import { useNavigation } from '@react-navigation/native';
 import { Pressable, ScrollView, Text } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native';
 import { CHATS } from '../data';
 
 export function ChatsScreen() {

@@ -1,7 +1,6 @@
-import type Ionicons from '@expo/vector-icons/Ionicons';
-import type { ComponentProps } from 'react';
+import { Ionicons } from '@expo/vector-icons';
 
-export type IconName = ComponentProps<typeof Ionicons>['name'];
+export type IconName = keyof typeof Ionicons.glyphMap;
 
 export type Activity = {
   id: string;

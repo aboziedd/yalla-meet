@@ -1,8 +1,6 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { ScrollView, Text, TextInput, View } from 'react-native';
-
+import { Ionicons } from '@expo/vector-icons';
 import { colors } from '@/theme/tokens';
-
 import { MESSAGES } from '../data';
 
 export function ChatRoomScreen() {

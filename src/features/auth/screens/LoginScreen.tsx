@@ -1,5 +1,4 @@
 import { Pressable, ScrollView, Text, View } from 'react-native';
-
 import type { RootScreenProps } from '@/app/navigation/types';
 import { AppButton } from '@/components/ui/AppButton';
 import { Input } from '@/components/ui/Input';

@@ -1,8 +1,6 @@
-import { useNavigation } from '@react-navigation/native';
 import { ScrollView, View } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native';
 import { Chip } from '@/components/ui/Chip';
-
 import { ActivityCard } from '../components/ActivityCard';
 import { ACTIVITIES } from '../data';
 

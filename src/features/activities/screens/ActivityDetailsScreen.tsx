@@ -1,12 +1,10 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { ScrollView, Text, View } from 'react-native';
-
+import { Ionicons } from '@expo/vector-icons';
 import type { RootScreenProps } from '@/app/navigation/types';
 import { AppButton } from '@/components/ui/AppButton';
 import { Avatar } from '@/components/ui/Avatar';
 import { Card } from '@/components/ui/Card';
 import { colors } from '@/theme/tokens';
-
 import { ACTIVITIES } from '../data';
 import type { IconName } from '../types';
 

@@ -1,10 +1,8 @@
 import { ScrollView, Text, View } from 'react-native';
-
 import type { RootScreenProps } from '@/app/navigation/types';
 import { AppButton } from '@/components/ui/AppButton';
 import { Chip } from '@/components/ui/Chip';
 import { Input } from '@/components/ui/Input';
-
 import { CATEGORIES } from '../data';
 
 export function CreateActivityScreen({ navigation }: RootScreenProps<'CreateActivity'>) {
