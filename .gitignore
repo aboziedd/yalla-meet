@@ -39,3 +39,8 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# secrets: never commit real env files (Lab 03); commit .env.example only
+.env
+.env.*
+!.env.example
