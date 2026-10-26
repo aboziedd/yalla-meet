@@ -7,8 +7,6 @@ const colors = {
   muted: '#94A3B8',
   primary: '#7CFFB2',
   'on-primary': '#0B1020',
-  danger: '#FB7185',
-  warning: '#FBBF24',
 };
 
 module.exports = { colors };

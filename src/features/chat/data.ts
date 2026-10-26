@@ -4,7 +4,7 @@ export const CHATS = [
 ];
 
 export const MESSAGES = [
-  { id: 'm1', sender: 'Salma', text: 'Hi everyone 👋', mine: false },
+  { id: 'm1', sender: 'Salma', text: 'Hi everyone', mine: false },
   { id: 'm2', sender: 'Adam', text: 'Hey! Bring your lab notes', mine: true },
   { id: 'm3', sender: 'Salma', text: 'I booked a table on the 2nd floor', mine: false },
 ];

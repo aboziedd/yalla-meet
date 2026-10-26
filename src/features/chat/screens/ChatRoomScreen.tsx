@@ -1,3 +1,4 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { ScrollView, Text, TextInput, View } from 'react-native';
 
 import { colors } from '@/theme/tokens';
@@ -25,7 +26,7 @@ export function ChatRoomScreen() {
           className="flex-1 rounded-2xl border border-line bg-background px-4 py-3 text-base text-ink"
         />
         <View className="h-12 w-12 items-center justify-center rounded-full bg-primary">
-          <Text className="text-lg font-bold text-on-primary">➤</Text>
+          <Ionicons name="send" size={20} color={colors.background} />
         </View>
       </View>
     </View>

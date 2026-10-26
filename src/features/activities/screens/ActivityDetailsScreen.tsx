@@ -1,11 +1,23 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { ScrollView, Text, View } from 'react-native';
 
 import type { RootScreenProps } from '@/app/navigation/types';
 import { AppButton } from '@/components/ui/AppButton';
 import { Avatar } from '@/components/ui/Avatar';
 import { Card } from '@/components/ui/Card';
+import { colors } from '@/theme/tokens';
 
 import { ACTIVITIES } from '../data';
+import type { IconName } from '../types';
+
+function InfoRow({ icon, text }: { icon: IconName; text: string }) {
+  return (
+    <View className="flex-row items-center gap-3">
+      <Ionicons name={icon} size={20} color={colors.muted} />
+      <Text className="text-base text-ink">{text}</Text>
+    </View>
+  );
+}
 
 export function ActivityDetailsScreen({ route, navigation }: RootScreenProps<'ActivityDetails'>) {
   const activity = ACTIVITIES.find((a) => a.id === route.params.activityId) ?? ACTIVITIES[0];
@@ -15,15 +27,15 @@ export function ActivityDetailsScreen({ route, navigation }: RootScreenProps<'Ac
       <ScrollView contentContainerClassName="gap-4 p-5">
         <View className="items-center gap-3 py-4">
           <View className="h-20 w-20 items-center justify-center rounded-3xl bg-raised">
-            <Text className="text-4xl">{activity.emoji}</Text>
+            <Ionicons name={activity.icon} size={38} color={colors.primary} />
           </View>
           <Text className="text-center text-2xl font-bold text-ink">{activity.title}</Text>
         </View>
 
         <Card className="gap-3">
-          <Text className="text-base text-ink">🕒 {activity.time}</Text>
-          <Text className="text-base text-ink">📍 {activity.venue}</Text>
-          <Text className="text-base text-ink">🚶 {activity.distance} away</Text>
+          <InfoRow icon="time-outline" text={activity.time} />
+          <InfoRow icon="location-outline" text={activity.venue} />
+          <InfoRow icon="navigate-outline" text={`${activity.distance} away`} />
         </Card>
 
         <Card className="gap-2">

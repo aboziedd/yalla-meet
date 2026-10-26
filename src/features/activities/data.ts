@@ -1,24 +1,26 @@
-export const CATEGORIES = ['☕ Food', '🎮 Gaming', '⚽ Sports', '📚 Study', '🚶 Outings'];
+import type { Activity } from './types';
 
-export const ACTIVITIES = [
+export const CATEGORIES = ['Food', 'Gaming', 'Sports', 'Study', 'Outings'];
+
+export const ACTIVITIES: Activity[] = [
   {
     id: 'a1',
-    emoji: '☕',
+    icon: 'cafe-outline',
     title: 'Coffee after lectures',
     venue: 'Campus Café',
-    time: 'Today · 6:00 PM',
+    time: 'Today, 6:00 PM',
     distance: '0.4 km',
     spots: '2/4',
     host: 'Omar',
     members: ['Omar', 'Nour'],
-    description: 'Grabbing coffee after the 4 PM lecture. Come say hi!',
+    description: 'Grabbing coffee after the 4 PM lecture. Come say hi.',
   },
   {
     id: 'a2',
-    emoji: '⚽',
+    icon: 'tennisball-outline',
     title: 'Padel doubles',
     venue: 'Padel Courts, El Shorouk',
-    time: 'Today · 8:30 PM',
+    time: 'Today, 8:30 PM',
     distance: '2.1 km',
     spots: '3/4',
     host: 'Youssef',
@@ -27,10 +29,10 @@ export const ACTIVITIES = [
   },
   {
     id: 'a3',
-    emoji: '📚',
+    icon: 'book-outline',
     title: 'Revision for the mobile exam',
     venue: 'BUE Library',
-    time: 'Tomorrow · 11:00 AM',
+    time: 'Tomorrow, 11:00 AM',
     distance: '0.2 km',
     spots: '3/6',
     host: 'Adam',
@@ -39,10 +41,10 @@ export const ACTIVITIES = [
   },
   {
     id: 'a4',
-    emoji: '🎮',
+    icon: 'game-controller-outline',
     title: 'Arcade night',
     venue: 'Arcade Zone, Madinaty',
-    time: 'Fri · 7:00 PM',
+    time: 'Friday, 7:00 PM',
     distance: '6.5 km',
     spots: '2/5',
     host: 'Hana',

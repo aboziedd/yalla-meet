@@ -1,8 +1,10 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chip } from '@/components/ui/Chip';
+import { colors } from '@/theme/tokens';
 
 import { ActivityCard } from '../components/ActivityCard';
 import { ACTIVITIES, CATEGORIES } from '../data';
@@ -15,7 +17,7 @@ export function ExploreScreen() {
     <View className="flex-1 bg-background" style={{ paddingTop: insets.top }}>
       <ScrollView contentContainerClassName="gap-4 pb-28 pt-4">
         <View className="gap-1 px-5">
-          <Text className="text-3xl font-bold text-ink">{"Yalla, let's go out 👋"}</Text>
+          <Text className="text-3xl font-bold text-ink">Explore</Text>
           <Text className="text-base text-muted">People near you who want to do something today</Text>
         </View>
 
@@ -39,9 +41,9 @@ export function ExploreScreen() {
 
       <Pressable
         onPress={() => navigation.navigate('CreateActivity')}
-        className="absolute bottom-6 right-5 rounded-full bg-primary px-6 py-4 active:opacity-70"
+        className="absolute bottom-6 right-5 h-14 w-14 items-center justify-center rounded-full bg-primary active:opacity-70"
       >
-        <Text className="text-base font-semibold text-on-primary">＋ Create</Text>
+        <Ionicons name="add" size={30} color={colors.background} />
       </Pressable>
     </View>
   );
