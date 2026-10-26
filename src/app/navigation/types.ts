@@ -9,6 +9,8 @@ export type MainTabParamList = {
 };
 
 export type RootStackParamList = {
+  Login: undefined;
+  SignUp: undefined;
   Main: NavigatorScreenParams<MainTabParamList>;
   ActivityDetails: { activityId: string };
   CreateActivity: undefined;
@@ -22,7 +24,6 @@ export type RootScreenProps<T extends keyof RootStackParamList> = NativeStackScr
 
 declare global {
   namespace ReactNavigation {
-    // eslint-disable-next-line @typescript-eslint/no-empty-object-type
     interface RootParamList extends RootStackParamList {}
   }
 }
